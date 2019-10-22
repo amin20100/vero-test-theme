@@ -9,7 +9,7 @@ add_action('after_setup_theme', function() {
 
 /**
  * Use the same template file for book taxonomies
- * Altough `tax-publisher.php` and `tax-author.php` files could be created
+ * Altough `tax-publisher.php` and `tax-book_author.php` files could be created
  */
 add_filter('template_include', function($template) {
     if (is_tax('publisher') || is_tax('book_author')) {
