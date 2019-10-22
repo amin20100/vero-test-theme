@@ -18,12 +18,3 @@ add_filter('template_include', function($template) {
 
     return $template;
 }, 99);
-
-/**
- * Modify user profile url endpoint base to avoide conflicts with `author` taxonomy
- * 
- */
-add_action('init', function() {
-    global $wp_rewrite;
-    $wp_rewrite->author_base = 'profile';
-});
